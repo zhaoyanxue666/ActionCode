@@ -1,0 +1,14 @@
+{%extends "bootstrap/base.html" %}
+<!--  -->
+{% import "bootstrap/wtf.html" as wtf %}
+<!--  -->
+{% block title %}更改时间{% endblock title %}
+<!--  -->
+{% block content -%}
+
+<div class="container" style="width: 60%;">
+    {{ wtf.quick_form(form) }}
+</div>
+
+
+{%- endblock content %}

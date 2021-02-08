@@ -1,0 +1,15 @@
+{%extends "bootstrap/base.html" %}
+<!--  -->
+{% import "bootstrap/wtf.html" as wtf %}
+<!--  -->
+{% block title %}后台登录{% endblock title %}
+<!--  -->
+{% block content -%}
+
+<div class="container" style="width: 60%;">
+    {{ wtf.quick_form(form) }}
+    <h1 style="color: red;">{{error}}</h1>
+</div>
+
+
+{%- endblock content %}
